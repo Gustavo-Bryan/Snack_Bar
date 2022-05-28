@@ -1,11 +1,29 @@
 :root {
   /* Cores de Texto*/
---cor-titulo: #102b42;
---cor-p: #5c7c98;
---cor-bg: #f1f5f8;
+  --cor-titulo: #102b42;
+  --cor-p: #5c7c98;
+  --cor-bg: #f1f5f8;
 
-/* Cores dos detalhes */
+  /* Cores dos detalhes */
   --cor-primaria: #c6a063;
   --cor-secundaria: #6a502b;
+}
 
+.bordas {
+  border: 3px solid;
+  border-radius: 5px;
+  border-top-color: var(--cor-primaria);
+  border-left-color: var(--cor-primaria);
+  border-right-color: var(--cor-secundaria);
+  border-bottom-color: var(--cor-secundaria);
+  transition: 0.3s;
+}
+
+.bordas:hover {
+  background-color: var(--cor-primaria);
+  color: var(--cor-bg) !important;
+}
+
+.hide {
+  display: none !important;
 }

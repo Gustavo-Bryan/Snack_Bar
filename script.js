@@ -6,6 +6,7 @@ const shake = document.querySelectorAll("[data-type='shake']");
 const janta = document.querySelectorAll("[data-type='janta']");
 
 lista.forEach((li) => {
+  //Função para mudar a cor do filtro que recebeu o click
   function ativaClass() {
     lista.forEach((item) => {
       item.classList.remove("ativo");
@@ -16,6 +17,7 @@ lista.forEach((li) => {
     item.addEventListener("click", ativaClass);
   });
 
+  
   li.addEventListener("click", (e) => {
     //dataTypeLi irá salvar o valor do tributo 'Data-Type' de onde ocorreu o click
     const dataTypeLi = e.target.attributes[0].value;

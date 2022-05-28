@@ -5,29 +5,55 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cardápio</title>
+  <title>Snack bar</title>
   <link rel="stylesheet" href="./style.css">
   <link rel="shortcut icon" href="./imgs/icone.svg" type="image/x-icon">
 </head>
 
 <body>
-  <h1 class="menu">Nosso Menu</h1>
+  <header class="header">
+    <img src="./imgs/Logo.svg" alt="Logo marca Snack Bar">
+    <div class="search">
+      <input type="text" placeholder="O que você deseja?">
+      <img src="./imgs/Search.svg" alt="">
+    </div>
+    <ul>
+      <li><a href="#cardapio">Cardápio</a></li>
+      <li><a href="" id="pedido" class="bordas">Fazer Pedido</a></li>
+    </ul>
+  </header>
+
+  <section class="container-bg">
+    <div>
+      <img src="./imgs/Hamburguer-capa.png" alt="" class="hamburguer">
+      <img src="./imgs/Fritas-capa.png" alt="" class="fritas">
+      <img src="./imgs/Refri-capa.png" alt="" class="refri">
+    </div>
+    <div class="descricao-capa">
+      <p>Não apenas um <br> Lanche mas uma</p>
+      <span>Experiência</span>
+    </div>
+  </section>
+
+
+
+  <h3 class="menu">Nosso Menu</h3>
   <nav>
     <ul class="menu-opcoes">
-      <li data-type="">Todos</li>
-      <li data-type="cafe">Café da Manhã</li>
-      <li data-type="almoco">Almoço</li>
-      <li data-type="shake">Shakes</li>
-      <li data-type="janta">Janta</li>
+      <li data-type="" class="bordas">Todos</li>
+      <li data-type="cafe" class="bordas">Café da Manhã</li>
+      <li data-type="almoco" class="bordas">Almoço</li>
+      <li data-type="shake" class="bordas">Shakes</li>
+      <li data-type="janta" class="bordas">Janta</li>
     </ul>
   </nav>
 
-  <main>
+  <main id="cardapio">
     <div class="item" data-type="cafe">
       <img src="./imgs/image-1.png" alt="Panquecas">
       <div>
         <div class="informacao-item">
-          <h2>Panquecas</h2>
+          <h3>Panquecas</h3>
           <span>R$99,99</span>
         </div>
         <p class="descricao-item">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam vel earum placeat, impedit molestiae vero eum.</p>
@@ -38,7 +64,7 @@
       <img src="./imgs/image-2.png" alt="Ao lado esquerdo do prato tem um lanche com Hambúrguer caseiro, 3 fatias de bacon, cheddar e salada, e ao lado direito batata frita">
       <div class="textos-item">
         <div class="informacao-item">
-          <h2>Duplo Capricho</h2>
+          <h3>Duplo Capricho</h3>
           <span>R$99,99</span>
         </div>
         <p class="descricao-item">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam vel earum placeat, impedit molestiae vero eum.</p>
@@ -49,7 +75,7 @@
       <img src="./imgs/image-3.png" alt="Milk-shake com um Donnuts em cima">
       <div class="textos-item">
         <div class="informacao-item">
-          <h2>Extra-shake</h2>
+          <h3>Extra-shake</h3>
           <span>R$99,99</span>
         </div>
         <p class="descricao-item">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam vel earum placeat, impedit molestiae vero eum.</p>
@@ -60,7 +86,7 @@
       <img src="./imgs/image-4.png" alt="Pão de forma com ovos, feijao com batata-palha em cima">
       <div class="textos-item">
         <div class="informacao-item">
-          <h2>Delícia Americana</h2>
+          <h3>Delícia Americana</h3>
           <span>R$99,99</span>
         </div>
         <p class="descricao-item">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam vel earum placeat, impedit molestiae vero eum.</p>
@@ -71,7 +97,7 @@
       <img src="./imgs/image-5.png" alt="Lanche com Hambúrguer caseiro, Ovo triplo e salada">
       <div class="textos-item">
         <div class="informacao-item">
-          <h2>Ovo Triplo</h2>
+          <h3>Ovo Triplo</h3>
           <span>R$99,99</span>
         </div>
         <p class="descricao-item">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam vel earum placeat, impedit molestiae vero eum.</p>
@@ -82,7 +108,7 @@
       <img src="./imgs/image-6.png" alt="Milk-shake com a borda do copo recheada com nutela e um pedaço de morango">
       <div class="textos-item">
         <div class="informacao-item">
-          <h2>Shake Dream</h2>
+          <h3>Shake Dream</h3>
           <span>R$99,99</span>
         </div>
         <p class="descricao-item">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam vel earum placeat, impedit molestiae vero eum.</p>
@@ -93,7 +119,7 @@
       <img src="./imgs/image-7.png" alt="Lanche com dupla fatia de bacon, ovo, cheddar e salada">
       <div class="textos-item">
         <div class="informacao-item">
-          <h2>X duplo bacon</h2>
+          <h3>X duplo bacon</h3>
           <span>R$99,99</span>
         </div>
         <p class="descricao-item">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam vel earum placeat, impedit molestiae vero eum.</p>
@@ -104,7 +130,7 @@
       <img src="./imgs/image-8.png" alt="Do lado direito é um lanche simple com Hambúrguer caseiro, cheddar e salada e do lado esquerdo, batata-frita">
       <div class="textos-item">
         <div class="informacao-item">
-          <h2>Clássico Americano</h2>
+          <h3>Clássico Americano</h3>
           <span>R$99,99</span>
         </div>
         <p class="descricao-item">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam vel earum placeat, impedit molestiae vero eum.</p>
@@ -115,7 +141,7 @@
       <img src="./imgs/image-9.png" alt="Um casal tomando um Milk-shake no mesmo copo">
       <div class="textos-item">
         <div class="informacao-item">
-          <h2>Shake duplo</h2>
+          <h3>Shake duplo</h3>
           <span>R$99,99</span>
         </div>
         <p class="descricao-item">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam vel earum placeat, impedit molestiae vero eum.</p>
@@ -127,7 +153,7 @@
       <img src="./imgs/image-10.png" alt="Rodela de bife com molho barbecue em cima">
       <div class="textos-item">
         <div class="informacao-item">
-          <h2>Churrasco</h2>
+          <h3>Churrasco</h3>
           <span>R$99,99</span>
         </div>
         <p class="descricao-item">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam vel earum placeat, impedit molestiae vero eum.</p>
