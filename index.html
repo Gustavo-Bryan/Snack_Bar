@@ -19,8 +19,7 @@
       <img src="./imgs/Search.svg" alt="">
     </div>
     <div class="header-pedido">
-      <i class="fa-solid fa-cart-shopping"><span id="contador">0</span></i>
-      <button class="bordas pedido">Fazer Pedido</button>
+      <i class="fa-solid fa-cart-shopping" id="carrinho"><span id="contador">0</span></i>
     </div>
 
     <button id="navbar">
@@ -28,18 +27,89 @@
     </button>
   </header>
 
-  <h3 class="menu">Nosso Menu</h3>
-  <nav>
-    <ul class="menu-opcoes">
-      <li data-type="" class="bordas">Todos</li>
-      <li data-type="cafe" class="bordas">Café da Manhã</li>
-      <li data-type="almoco" class="bordas">Almoço</li>
-      <li data-type="shake" class="bordas">Shakes</li>
-      <li data-type="janta" class="bordas">Janta</li>
-    </ul>
-  </nav>
+  <section class="modal-container">
+    <div class="modal">
+      <ul>
+        <li class="modal-item">
+          <div class="item" data-type="cafe">
+            <div>
+              <img src="./imgs/image-1.png" alt="Panquecas">
+              <i class="fa-solid fa-plus add"></i>
+            </div>
+            <div>
+              <div class="informacao-item">
+                <h3>Panquecas</h3>
+                <span id="preco">R$10,00</span>
+              </div>
+              <p class="descricao-item">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam vel earum placeat, impedit molestiae vero eum.</p>
+            </div>
+          </div>
+        </li>
+        <li class="modal-item">
+          <div class="item" data-type="cafe">
+            <div>
+              <img src="./imgs/image-1.png" alt="Panquecas">
+              <i class="fa-solid fa-plus add"></i>
+            </div>
+            <div>
+              <div class="informacao-item">
+                <h3>Panquecas</h3>
+                <span id="preco">R$11,00</span>
+              </div>
+              <p class="descricao-item">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam vel earum placeat, impedit molestiae vero eum.</p>
+            </div>
+          </div>
+        </li>
+        <li class="modal-item">
+          <div class="item" data-type="cafe">
+            <div>
+              <img src="./imgs/image-1.png" alt="Panquecas">
+              <i class="fa-solid fa-plus add"></i>
+            </div>
+            <div>
+              <div class="informacao-item">
+                <h3>Panquecas</h3>
+                <span id="preco">R$12,00</span>
+              </div>
+              <p class="descricao-item">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam vel earum placeat, impedit molestiae vero eum.</p>
+            </div>
+          </div>
+        </li>
+        <li class="modal-item">
+          <div class="item" data-type="cafe">
+            <div>
+              <img src="./imgs/image-1.png" alt="Panquecas">
+              <i class="fa-solid fa-plus add"></i>
+            </div>
+            <div>
+              <div class="informacao-item">
+                <h3>Panquecas</h3>
+                <span id="preco">R$55,49</span>
+              </div>
+              <p class="descricao-item">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam vel earum placeat, impedit molestiae vero eum.</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="modal-total">
+      <span id="total-preco">Total: R$ 00,00</span>
+      <button id="total-pedido">Fazer Pedido</button>
+    </div>
+  </section>
 
-  <section class="modal-container"> </section>
+  <section>
+    <h3 class="menu">Nosso Menu</h3>
+    <nav>
+      <ul class="menu-opcoes">
+        <li data-type="" class="bordas">Todos</li>
+        <li data-type="cafe" class="bordas">Café da Manhã</li>
+        <li data-type="almoco" class="bordas">Almoço</li>
+        <li data-type="shake" class="bordas">Shakes</li>
+        <li data-type="janta" class="bordas">Janta</li>
+      </ul>
+    </nav>
+  </section>
 
   <main id="cardapio">
     <div class="item" data-type="cafe">

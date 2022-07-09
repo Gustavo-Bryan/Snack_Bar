@@ -1,4 +1,5 @@
 @import './css/estilos.css';
+@import './css/modal.css';
 
 * {
   margin: 0;
@@ -88,14 +89,6 @@ body {
   top: 0;
   color: var(--cor-p);
   opacity: 0;
-}
-
-.pedido {
-  padding: 10px 15px;
-  color: #6a502b;
-  font-size: 1.125rem;
-  letter-spacing: 1.125px;
-  cursor: pointer;
 }
 
 #navbar {
@@ -192,7 +185,7 @@ main {
   position: absolute;
   left: 23%;
   top: 25%;
-  padding: 30px 58px;
+  padding: 37px 58px;
   transition: 0.3s;
   opacity: 0;
 }
@@ -203,7 +196,7 @@ main {
 
 .item img {
   width: 255px;
-  height: 150px;
+  height: 96%;
   border-radius: 5px;
   border: 4px solid var(--cor-primaria);
   margin-right: 20px;
@@ -245,6 +238,10 @@ main {
     gap: 10px;
     max-width: 600px;
     margin: 0 auto 120px;
+  }
+
+  .add {
+    padding: 34px 58px;
   }
 }
 
@@ -307,9 +304,19 @@ main {
   }
 
   .item img {
-    width: 100%;
+    width: 98.5%;
     height: 300px;
     margin-bottom: 15px;
+  }
+
+  .add {
+    padding: 68px 103px;
+    left: 25%;
+    top: 24%;
+  }
+
+  .item.escolhido {
+    box-shadow: 5px 5px 10px rgba(198, 160, 99, 0.7);
   }
 
   .informacao-item h3,
