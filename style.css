@@ -175,7 +175,6 @@ main {
 .fa-dash {
   color: #fff !important;
   padding: 20px;
-  background-color: #f00;
 }
 
 .add {
@@ -196,7 +195,7 @@ main {
 
 .item img {
   width: 255px;
-  height: 96%;
+  height: 167px;
   border-radius: 5px;
   border: 4px solid var(--cor-primaria);
   margin-right: 20px;

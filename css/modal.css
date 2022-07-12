@@ -109,3 +109,13 @@
     transform: scale(1.1);
   }
 }
+
+#btn-close {
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+  font: 500 3rem 'Roboto';
+  background-color: transparent;
+  position: absolute;
+  right: 30px;
+}
