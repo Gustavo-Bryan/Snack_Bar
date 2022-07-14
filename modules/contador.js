@@ -1,5 +1,6 @@
-export default function contador() {
+export default function initContador() {
   const itens = document.querySelectorAll('.item');
+  const contador = document.querySelector('#contador');
 
   itens.forEach((item) => {
     item.addEventListener('click', () => {
@@ -12,16 +13,14 @@ export default function contador() {
   });
 
   function aumentaContador() {
-    const contador = document.querySelector('#contador');
     contador.style.opacity = '1';
-    +contador.innerText++;
+    contador.innerText++;
   }
 
   function diminuiContador() {
-    const contador = document.querySelector('#contador');
-    +contador.innerText--;
+    contador.innerText--;
     if (contador.innerText == 0) {
-      contador.style.opacity = '0';
+      contador.style.opacity = 0;
     }
   }
 }

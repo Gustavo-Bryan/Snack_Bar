@@ -182,9 +182,9 @@ main {
   color: #fff;
   transform: scale(2);
   position: absolute;
-  left: 23%;
+  left: 24%;
   top: 25%;
-  padding: 37px 58px;
+  padding: 35px 57px;
   transition: 0.3s;
   opacity: 0;
 }
